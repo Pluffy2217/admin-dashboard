@@ -37,9 +37,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/team" element={<Team theme={theme} />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/invoices" element={<Invoices />} />
-          <Route path="/form" element={<Form />} />
+          <Route path="/contacts" element={<Contacts theme={theme} />} />
+          <Route path="/invoices" element={<Invoices theme={theme} />} />
+          <Route path="/form" element={<Form theme={theme} />} />
           <Route path="/bar" element={<Bar />} />
           <Route path="/pie" element={<Pie />} />
           <Route path="/line" element={<Line />} />

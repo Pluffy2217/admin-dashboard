@@ -185,17 +185,6 @@ export const mockDataContacts = [
     zipCode: "44215",
     registrarId: 533215,
   },
-  {
-    id: 11,
-    name: "Steve Goodman",
-    email: "stevegoodmane@gmail.com",
-    age: 11,
-    phone: "(444)555-6239",
-    address: "51234 Fiveton Street, CunFory, ND 212412",
-    city: "Colunza",
-    zipCode: "1234",
-    registrarId: 92197,
-  },
 ];
 
 export const mockDataInvoices = [

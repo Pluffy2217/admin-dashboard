@@ -51,14 +51,17 @@ const SidebarComponent = ({ theme }) => {
           }}
         >
           <MenuItem
-            onClick={() => setIsCollapsed(!isCollapesed)}
+          // onClick={() => {setIsCollapsed(!isCollapesed)}}
             icon={isCollapesed ? <AiOutlineMenu /> : undefined}
             MenuItem
           >
             {!isCollapesed && (
               <div className="flex justify-between items-center ml-15 pt-3">
                 <p className="text-xl">ADMINIS</p>
-                <button className="mr-5" onClick={() => setIsCollapsed(!isCollapesed)}>
+                <button
+                  className="mr-5"
+                  onClick={() => setIsCollapsed(!isCollapesed)}
+                >
                   <AiOutlineMenu />
                 </button>
               </div>

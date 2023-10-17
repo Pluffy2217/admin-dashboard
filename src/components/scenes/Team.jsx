@@ -38,8 +38,8 @@ const Team = ({ theme }) => {
           <div
             className={`w-[60%]  mx-auto p-2 text-center flex justify-center ${
               access === "admin"
-                ? "dark:bg-[#79AC78] bg-[#c5ccc2]"
-                : "dark:bg-[#49634b] bg-[#d4d4d4]"
+                ? "dark:bg-teal-700 bg-gray-300"
+                : "dark:bg-teal-900 bg-gray-400"
             } rounded-sm`}
           >
             {access === "admin" && <></>}
@@ -61,11 +61,11 @@ const Team = ({ theme }) => {
             border: "none",
           },
           "& .MuiDataGrid-cell": {
-            borderBottom: "1",
+            borderBottom: "2",
             borderColor: "#352F44",
           },
           "& .name-column--cell": {
-            color: theme === "dark" ? "#A7D397" : "",
+            color: theme === "dark" ? "#64CCC5" : "#183D3D",
           },
           "& .MuiDataGrid-columnHeaders": {
             backgroundColor: theme === "dark" ? "#12486B" : "#D8D9DA",
