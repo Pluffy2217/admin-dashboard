@@ -45,7 +45,7 @@ const App = () => {
           <Route path="/line" element={<Line />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/geography" element={<Geography />} />
-          <Route path="/calender" element={<Calender />} />
+          <Route path="/calender" element={<Calender theme={theme} />} />
         </Routes>
       </div>
     </div>
