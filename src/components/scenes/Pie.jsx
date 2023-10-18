@@ -1,5 +1,16 @@
-const Pie = () => {
-    return <div className="text-black dark:text-white">Pie</div>
-}
+import { Box } from "@mui/material";
+import Header from "../Header";
+import PieChart from "../charts/PieChart";
 
-export default Pie
+const Pie = ({ theme }) => {
+  return (
+    <Box className="m-10">
+      <Header title="PIE CHART" subTitle="Simple Pie Chart" />
+      <Box className height="70vh">
+        <PieChart theme={theme} />
+      </Box>
+    </Box>
+  );
+};
+
+export default Pie;

@@ -40,11 +40,11 @@ const App = () => {
           <Route path="/contacts" element={<Contacts theme={theme} />} />
           <Route path="/invoices" element={<Invoices theme={theme} />} />
           <Route path="/form" element={<Form theme={theme} />} />
-          <Route path="/bar" element={<Bar />} />
-          <Route path="/pie" element={<Pie />} />
-          <Route path="/line" element={<Line />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/geography" element={<Geography />} />
+          <Route path="/bar" element={<Bar theme={theme} />} />
+          <Route path="/pie" element={<Pie theme={theme} />} />
+          <Route path="/line" element={<Line theme={theme} />} />
+          <Route path="/faq" element={<FAQ theme={theme} />} />
+          <Route path="/geography" element={<Geography theme={theme} />} />
           <Route path="/calender" element={<Calender theme={theme} />} />
         </Routes>
       </div>

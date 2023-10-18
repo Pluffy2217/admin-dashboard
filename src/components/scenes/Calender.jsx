@@ -53,7 +53,7 @@ const Calender = ({ theme }) => {
             {currentEvents.map((event) => (
               <ListItem
                 key={event.id}
-                className="dark:bg-[#2e437475] bg-[#ebefef] dark:text-white text-black my-3 rounded-sm border border-gray-400"
+                className="dark:bg-[#19202e] bg-[#ebefef] dark:text-white text-black my-3 rounded-sm "
               >
                 <ListItemText
                   primary={event.title}
