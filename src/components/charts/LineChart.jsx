@@ -39,7 +39,7 @@ const LineChart = ({ isDashboard = false, theme }) => {
         },
       }}
       //   colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }}
-      colors={{ scheme: 'category10' }}
+      colors={{ scheme: "category10" }}
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       xScale={{ type: "point" }}
       yScale={{
@@ -63,6 +63,7 @@ const LineChart = ({ isDashboard = false, theme }) => {
       }}
       axisLeft={{
         tickSize: 5,
+        tickValues: 5,
         tickPadding: 5,
         tickRotation: 0,
         legend: isDashboard ? undefined : "count",

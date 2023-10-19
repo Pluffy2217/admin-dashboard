@@ -34,7 +34,7 @@ const SidebarComponent = ({ theme }) => {
   const [selected, setSelected] = useState("Dashboard");
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden min-h-screen">
       <Sidebar
         collapsed={isCollapesed}
         className="h-screen text-black dark:text-white"
@@ -51,7 +51,7 @@ const SidebarComponent = ({ theme }) => {
           }}
         >
           <MenuItem
-          // onClick={() => {setIsCollapsed(!isCollapesed)}}
+          onClick={() => {setIsCollapsed(!isCollapesed)}}
             icon={isCollapesed ? <AiOutlineMenu /> : undefined}
             MenuItem
           >

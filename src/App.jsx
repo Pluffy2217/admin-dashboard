@@ -30,12 +30,12 @@ const App = () => {
   };
 
   return (
-    <div className="w-full h-full bg-[#F1EFEF] dark:bg-[#131923] flex">
+    <div className="w-full min-h-screen object-cover bg-[#F1EFEF] dark:bg-[#131923] flex">
       <SidebarComponent theme={theme} />
       <div className="w-full">
         <Topbar changeTheme={handleThemeSwitch} />
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard theme={theme} />} />
           <Route path="/team" element={<Team theme={theme} />} />
           <Route path="/contacts" element={<Contacts theme={theme} />} />
           <Route path="/invoices" element={<Invoices theme={theme} />} />
