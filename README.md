@@ -11,4 +11,4 @@ Build a COMPLETE React Admin Dashboard App | **React**, **Tailwind CSS**, **Mate
 - Calender, to add notes on specific days on it, which also shows in the format of weeks and days.
 - FAQ Page
 - **Charts** [Bar, Line, Pie, World Map] with dummy statistics
-- 
+
