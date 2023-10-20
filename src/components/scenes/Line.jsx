@@ -6,7 +6,7 @@ const Line = ({ theme }) => {
   return (
     <Box className="m-10">
       <Header title="LINE CHART" subTitle="Simple Line Chart" />
-      <Box className height="70vh">
+      <Box className height="70vh" width="80vw">
         <LineChart theme={theme} />
       </Box>
     </Box>

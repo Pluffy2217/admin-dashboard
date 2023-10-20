@@ -16,6 +16,7 @@ import Calender from "./components/scenes/Calender";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
+  const [isSidebar, setIsSidebar] = useState(true);  
 
   useEffect(() => {
     if (theme === "light") {
@@ -31,9 +32,9 @@ const App = () => {
 
   return (
     <div className="w-full min-h-screen object-cover bg-[#F1EFEF] dark:bg-[#131923] flex">
-      <SidebarComponent theme={theme} />
+      <SidebarComponent theme={theme} isSidebar={isSidebar} />
       <div className="w-full">
-        <Topbar changeTheme={handleThemeSwitch} />
+        <Topbar changeTheme={handleThemeSwitch} setIsSidebar={setIsSidebar} />
         <Routes>
           <Route path="/" element={<Dashboard theme={theme} />} />
           <Route path="/team" element={<Team theme={theme} />} />

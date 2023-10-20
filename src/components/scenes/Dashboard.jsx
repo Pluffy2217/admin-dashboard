@@ -228,7 +228,9 @@ const Dashboard = ({ theme }) => {
             mt="25px"
           >
             <ProgressCircle size="125" theme={theme} />
-            <p className="dark:text-teal-500 text-teal-600 mt-4">$48,352 revenue generated</p>
+            <p className="dark:text-teal-500 text-teal-600 mt-4">
+              $48,352 revenue generated
+            </p>
             <p className="font-bold dark:text-white">
               Includes extra misc expenditures and costs
             </p>
@@ -237,7 +239,11 @@ const Dashboard = ({ theme }) => {
 
         {/*  */}
 
-        <Box gridColumn="span 4" gridRow="span 2" backgroundColor={theme === "dark" ? "#232D3F" : "#D8D9DA"}>
+        <Box
+          gridColumn="span 4"
+          gridRow="span 2"
+          backgroundColor={theme === "dark" ? "#232D3F" : "#D8D9DA"}
+        >
           <p className="font-bold dark:text-white px-7 pt-7">Sales Quantity</p>
           <Box height="250px" mt="-20px">
             <BarChart isDashboard={true} theme={theme} />
@@ -252,7 +258,9 @@ const Dashboard = ({ theme }) => {
           backgroundColor={theme === "dark" ? "#232D3F" : "#D8D9DA"}
           p="30px"
         >
-          <p className="font-bold dark:text-white mb-4">Geography Based Traffic</p>
+          <p className="font-bold dark:text-white mb-4">
+            Geography Based Traffic
+          </p>
           <Box height="200px">
             <GeographyChart isDashboard={true} theme={theme} />
           </Box>

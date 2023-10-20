@@ -72,6 +72,7 @@ const Invoices = ({ theme }) => {
             border: "none",
             marginLeft: "5px",
             outline: "none !important",
+            width: "99%"
           }}
         />
       </Box>

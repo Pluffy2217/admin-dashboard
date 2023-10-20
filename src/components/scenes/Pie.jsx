@@ -6,7 +6,7 @@ const Pie = ({ theme }) => {
   return (
     <Box className="m-10">
       <Header title="PIE CHART" subTitle="Simple Pie Chart" />
-      <Box className height="70vh">
+      <Box className height="70vh" width="80vw">
         <PieChart theme={theme} />
       </Box>
     </Box>

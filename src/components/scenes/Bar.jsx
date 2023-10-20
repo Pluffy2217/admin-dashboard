@@ -6,7 +6,7 @@ const Bar = ({ theme }) => {
   return (
     <Box className="m-10">
       <Header title="BAR CHART" subTitle="Simple Bar Chart" />
-      <Box className height="70vh">
+      <Box className height="70vh" width="80vw">
         <BarChart theme={theme} />
       </Box>
     </Box>

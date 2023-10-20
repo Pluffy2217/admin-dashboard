@@ -61,7 +61,7 @@ const Team = ({ theme }) => {
             border: "none",
           },
           "& .MuiDataGrid-cell": {
-            borderBottom: "2",
+            borderBottom: "1",
             borderColor: "#352F44",
           },
           "& .name-column--cell": {
@@ -86,6 +86,7 @@ const Team = ({ theme }) => {
             // borderColor: theme === 'dark' ? '#232D3F' : 'yellow',
             marginLeft: "5px",
             outline: "none !important",
+            width: "99%"
           }}
         />
       </Box>

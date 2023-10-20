@@ -37,7 +37,9 @@ const SidebarComponent = ({ theme }) => {
     <div className="overflow-hidden min-h-screen">
       <Sidebar
         collapsed={isCollapesed}
-        className="h-screen text-black dark:text-white"
+        className={`${
+          selected === "Dashboard" ? "h-full" : "h-screen"
+        } text-black dark:text-white`}
         backgroundColor={theme === "dark" ? "#232D3F" : "#D8D9DA"}
       >
         <Menu
@@ -51,7 +53,9 @@ const SidebarComponent = ({ theme }) => {
           }}
         >
           <MenuItem
-          onClick={() => {setIsCollapsed(!isCollapesed)}}
+            onClick={() => {
+              setIsCollapsed(!isCollapesed);
+            }}
             icon={isCollapesed ? <AiOutlineMenu /> : undefined}
             MenuItem
           >
@@ -59,7 +63,7 @@ const SidebarComponent = ({ theme }) => {
               <div className="flex justify-between items-center ml-15 pt-3">
                 <p className="text-xl">ADMINIS</p>
                 <button
-                  className="mr-5"
+                  className={selected === 'Dashboard' ? "mr-8" : "mr-5"}
                   onClick={() => setIsCollapsed(!isCollapesed)}
                 >
                   <AiOutlineMenu />
@@ -69,7 +73,7 @@ const SidebarComponent = ({ theme }) => {
           </MenuItem>
 
           {!isCollapesed && (
-            <div className="flex flex-col items-center text-center p-6">
+            <div className={`flex flex-col items-center text-center p-8 ${selected === 'Dashboard' ? "-ml-8" : "-ml-4"}`}>
               <div>
                 <img
                   alt="avatar"

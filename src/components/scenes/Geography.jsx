@@ -6,7 +6,13 @@ const Geography = ({ theme }) => {
   return (
     <Box className="m-10">
       <Header title="GEOGRAPHY CHART" subTitle="Simple Geography Chart" />
-      <Box className={`border ${theme === 'dark' ? "border-gray-200" : "border-gray-700"}`} height="70vh">
+      <Box
+        className={`border ${
+          theme === "dark" ? "border-gray-200" : "border-gray-700"
+        }`}
+        height="70vh"
+        width="80vw"
+      >
         <GeographyChart theme={theme} />
       </Box>
     </Box>
