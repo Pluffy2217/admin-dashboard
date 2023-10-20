@@ -30,7 +30,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 };
 
 const SidebarComponent = ({ theme }) => {
-  const [isCollapesed, setIsCollapsed] = useState(false);
+  const [isCollapesed, setIsCollapsed] = useState(true);
   const [selected, setSelected] = useState("Dashboard");
 
   return (
