@@ -1,6 +1,7 @@
 # Admin Dashboard
 
 Build a COMPLETE React Admin Dashboard App | **React**, **Tailwind CSS**, **Material UI**, Data Grid, Light & Dark Mode
+
 **Deployed Link:** https://admin-dashboard-olive-delta.vercel.app/
 
 # Features
